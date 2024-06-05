@@ -17,7 +17,6 @@ public class FirstNonRepeatingCharacter {
             if (charCounter.get(s.toLowerCase().charAt(index)) == 1)
                 return String.valueOf(s.charAt(index));
         }
-
         return "";
     }
 

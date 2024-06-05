@@ -1,12 +1,14 @@
 package Codewars_Learning;
+
 import java.util.*;
+
 public class SumOfIntervals {
     public static void main(String[] args) {
         System.out.println(sumIntervals(new int[][]{}));
     }
 
     public static int sumIntervals(int[][] intervals) {
-        if(intervals.length == 0)
+        if (intervals.length == 0)
             return 0;
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
 

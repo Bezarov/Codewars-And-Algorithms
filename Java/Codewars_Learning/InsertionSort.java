@@ -11,7 +11,7 @@ public class InsertionSort {
         int[] sortedArray = new int[arr.length];
         int arrayLenght = arr.length - 1;
 
-        for (int i = 0; i <= arrayLenght; i ++) {
+        for (int i = 0; i <= arrayLenght; i++) {
             int smallestElement = arr[0];
             int smallestElementIndex = 0;
             for (int j = 0; j < arr.length; j++) {

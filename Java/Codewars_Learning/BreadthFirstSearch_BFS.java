@@ -2,7 +2,7 @@ package Codewars_Learning;
 
 import java.util.*;
 
-public class Search_queue {
+public class BreadthFirstSearch_BFS {
     public static void main(String[] args) {
         List<String> sashaFriends = new ArrayList<>();
         sashaFriends.add("Dima");
@@ -26,14 +26,15 @@ public class Search_queue {
         relationships.put("Vasea", vaseaFriends);
 
         Queue<String> queue = new LinkedList<>(relationships.get("Sasha"));
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             String person = queue.remove();
-            if(isNameEndsWithE(person))
+            if (isNameEndsWithE(person))
                 System.out.println(person + " ends with 'e'");
             else queue.addAll(relationships.getOrDefault(person, List.of()));
         }
     }
-    public static boolean isNameEndsWithE(String name){
+
+    public static boolean isNameEndsWithE(String name) {
         return name.endsWith("e");
     }
 }

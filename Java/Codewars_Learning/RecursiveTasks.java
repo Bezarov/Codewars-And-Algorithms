@@ -1,9 +1,8 @@
 package Codewars_Learning;
 
-
 import java.util.Arrays;
 
-public class Recursive {
+public class RecursiveTasks {
     public static void main(String[] args) {
         countDown(3);
         System.out.println(factortial(3));
@@ -30,8 +29,9 @@ public class Recursive {
             return array[index];
         return array[index] += sumArrayElement(array, index + 1);
     }
-    public static int[] quickSort(int[] array){
-        if(array.length < 2)
+
+    public static int[] quickSort(int[] array) {
+        if (array.length < 2)
             return array;
 
         int main = array[array.length / 2];
@@ -43,11 +43,10 @@ public class Recursive {
             if (i == array.length / 2)
                 continue;
 
-            if(main > array[i]) {
+            if (main > array[i]) {
                 leftArray[leftIndex] = array[i];
-                leftIndex ++;
-            }
-            else {
+                leftIndex++;
+            } else {
                 rightArray[rightIndex] = array[i];
                 rightIndex++;
             }

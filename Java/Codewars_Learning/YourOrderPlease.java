@@ -8,9 +8,10 @@ public class YourOrderPlease {
         System.out.println(order("is2 Thi1s T4est 3a"));
 
     }
+
     public static String order(String words) {
         return Arrays.stream(words.split(" "))
-                .sorted((a,b) -> (Integer.parseInt(a.replaceAll("\\D", ""))) -
+                .sorted((a, b) -> (Integer.parseInt(a.replaceAll("\\D", ""))) -
                         (Integer.parseInt(b.replaceAll("\\D", ""))))
                 .collect(Collectors.joining(" "));
     }

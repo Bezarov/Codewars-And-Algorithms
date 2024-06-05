@@ -5,8 +5,9 @@ public class ReturnNegative {
         System.out.println(makeNegative(5));
 
     }
+
     public static int makeNegative(final int x) {
-        if(x <= 0 )
+        if (x <= 0)
             return x;
         return x * -1;
     }

@@ -1,10 +1,8 @@
 package Codewars_Learning;
 
-import java.util.Arrays;
-
 public class MatrixDeterminant {
     public static void main(String[] args) {
-        System.out.println(determinant(new int[][]{{2,5,3}, {1,-2,-1}, {1, 3, 4}}));
+        System.out.println(determinant(new int[][]{{2, 5, 3}, {1, -2, -1}, {1, 3, 4}}));
     }
 
     public static int determinant(int[][] matrix) {

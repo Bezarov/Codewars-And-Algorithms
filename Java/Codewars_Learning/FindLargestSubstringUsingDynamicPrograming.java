@@ -1,7 +1,7 @@
 package Codewars_Learning;
 
 
-public class FindLargestSubstirngDynamic {
+public class FindLargestSubstringUsingDynamicPrograming {
     public static void main(String[] args) {
         String wordA = "hish";
         String wordB = "fish";
@@ -32,9 +32,8 @@ public class FindLargestSubstirngDynamic {
             for (int j = 0; j < lenght; j++) {
                 if (charB[i] == charA[j]) {
                     result[i][j] = matchCount;
-                    matchCount ++;
-                }
-                else
+                    matchCount++;
+                } else
                     result[i][j] = 0;
             }
         }

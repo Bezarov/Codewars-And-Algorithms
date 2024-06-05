@@ -9,7 +9,7 @@ public class DijkstraAlgorithm {
     public static void main(String[] args) {
 
         Map<String, Integer> sashaCosts = new HashMap<>(Map.of("Dima", 66, "Nikita", 22));
-        Map<String, Integer> dimaCosts = new HashMap<>(Map.of("Daniel", 1,"Nikita", 7 ));
+        Map<String, Integer> dimaCosts = new HashMap<>(Map.of("Daniel", 1, "Nikita", 7));
         Map<String, Integer> nikitaCosts = new HashMap<>(Map.of("Dima", 3, "Daniel", 5, "Vasea", 1));
         Map<String, Integer> vaseaCosts = new HashMap<>(Map.of("Petya", 3));
         Map<String, Integer> petyaCosts = new HashMap<>(Map.of("Daniel", 7));

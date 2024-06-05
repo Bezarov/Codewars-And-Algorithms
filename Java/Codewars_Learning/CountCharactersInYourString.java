@@ -8,6 +8,7 @@ public class CountCharactersInYourString {
         System.out.println(count("aabbbac"));
 
     }
+
     public static Map<Character, Integer> count(String str) {
         return str.toLowerCase().chars().mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(c -> c, Collectors.summingInt(c -> 1)));

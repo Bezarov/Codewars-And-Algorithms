@@ -21,7 +21,7 @@ public class GreedyAlgorithms {
         Set<String> statesCoverageNeeded = new HashSet<>();
         for (Map.Entry<String, Set<String>> entry : stationsAndStates.entrySet())
             statesCoverageNeeded.addAll(entry.getValue());
-        
+
         while (!statesCoverageNeeded.isEmpty()) {
             String bestStation = "None";
             Set<String> statesCovered = new HashSet<>();

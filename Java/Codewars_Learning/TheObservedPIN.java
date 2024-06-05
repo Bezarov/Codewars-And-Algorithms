@@ -22,7 +22,7 @@ public class TheObservedPIN {
 
         for (int i = 0; i < generatedCombination.size(); i++) {
             for (int j = 1; j < generatedCombination.size(); j += numbers.size() - 1) {
-                if(numbers.size() == 1)
+                if (numbers.size() == 1)
                     return generatedCombination.stream().map(String::valueOf).collect(Collectors.toList());
                 if (numbers.size() == 2) {
                     result.add(String.valueOf(generatedCombination.get(i))
@@ -56,25 +56,6 @@ public class TheObservedPIN {
         }
     }
 }
-
-
-//       if (numbers.size() <= 2) {
-//               for (int i = 0; i < generatedCombination.size(); i++) {
-//        for (int j = 1; j < generatedCombination.size(); j++) {
-//        result.add(String.valueOf(generatedCombination.get(i))
-//        .concat(String.valueOf(generatedCombination.get(j))));
-//        }
-//        }
-//        } else
-//        for (int i = 0; i < generatedCombination.size(); i++) {
-//        for (int j = 1; j < generatedCombination.size(); j++) {
-//        for (int k = 2; k < generatedCombination.size(); k++) {
-//        result.add(String.valueOf(generatedCombination.get(i))
-//        .concat(String.valueOf(generatedCombination.get(j)))
-//        .concat(String.valueOf(generatedCombination.get(k))));
-//        }
-//        }
-//        }
 
 
 
