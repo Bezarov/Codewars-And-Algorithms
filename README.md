@@ -1,6 +1,7 @@
                                              CodewarsAndAlgorithmsLearning
 Welcome to the CodewarsAndAlgorithms repository! 
 Here, you'll find all the code I wrote while learning algorithms and solving problems on the Codewars platform.
+Codewars profile: https://www.codewars.com/users/Bezarov
 
                                                      Description
 This repository contains solutions to problems and examples of algorithms that I studied and implemented during my learning journey.
