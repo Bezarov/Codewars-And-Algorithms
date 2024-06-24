@@ -1,5 +1,15 @@
 package Codewars.LambdaAndStream;
 
+/*
+Task: Implementing a functional interface
+Create a functional Calculator interface with a method int calculate(int a, int b). Write multiple implementations of this interface using lambda expressions:
+
+Addition of two numbers.
+Subtracting the second number from the first.
+Multiplying two numbers.
+Divide the first number by the second.
+ */
+
 @FunctionalInterface
 public interface FunctionalInterfaceAndLambda {
     int calculate(int a, int b);
