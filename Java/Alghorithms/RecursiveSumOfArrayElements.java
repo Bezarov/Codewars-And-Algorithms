@@ -2,7 +2,7 @@ package Alghorithms;
 
 public class RecursiveSumOfArrayElements {
     public static void main(String[] args) {
-        System.out.println(sumArrayElement(new int[]{1, 2, 3}, 0));
+        System.out.println(sumArrayElement(new int[]{1, 2, 3, 10, 20, 30, 560}, 0));
     }
 
     public static int sumArrayElement(int[] array, int index) {
